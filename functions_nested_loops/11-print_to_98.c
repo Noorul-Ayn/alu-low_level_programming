@@ -6,7 +6,9 @@
  * @n: Starting number
  *
  * Description: Prints numbers from n to 98, separated by comma and space
- * If n < 98, counts up; if n > 98, counts down; if n == 98, prints 98
+ * If n < 98, counts up;
+ * if n > 98, counts down;
+ * if n == 98, prints 98
  *
  * Return: void
  */
