@@ -9,3 +9,35 @@ c. There are 4 stages that happens when a C program is compiled:
    2. Compilation: This stage checks the C code for syntax errors, then translate it into assembly langauge.
    3. Assembly: The assembly code translates it into machine langauge, and the output is an object file.
    4. Linking: In this stage, the linker combines the object file with necessary libraries and produce the final executable file that can be run.
+
+#QUESTION 2- Control flow & Repetition
+
+SAMPLE INPUT/OUTPUT
+
+(SIMPLE CALCULATOR MENU)
+1. Add two numbers
+2. Subtract two numbers
+3. Multiply two numbers
+4. Exit
+Enter your choice: 1
+Enter first number: 5
+Enter second number: 3
+Result: 8.00
+
+(SIMPLE CALCULATOR MENU)
+1. Add two numbers
+2. Subtract two numbers
+3. Multiply two numbers
+4. Exit
+Enter your choice: 4
+Exiting program...
+
+PROGRAM LOGIC;
+
+This program implements a simple menu-driven calculator. It uses a while loop to repeatedly display the menu until the user chooses to exit.
+
+The user selects an option by entering a number. Than a switch statement is used to perform the selected operation (addition, subtraction, or multiplication).
+
+If the user enters an invalid option, an if statement detects it and the continue statement restarts the loop. When the user selects option 4, the break statement terminates the loop and ends the program.
+
+
