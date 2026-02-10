@@ -10,7 +10,7 @@ c. There are 4 stages that happens when a C program is compiled:
    3. Assembly: The assembly code translates it into machine langauge, and the output is an object file.
    4. Linking: In this stage, the linker combines the object file with necessary libraries and produce the final executable file that can be run.
 
-#QUESTION 2- Control flow & Repetition
+# QUESTION 2- Control flow & Repetition
 
 SAMPLE INPUT/OUTPUT
 
@@ -41,3 +41,22 @@ The user selects an option by entering a number. Than a switch statement is used
 If the user enters an invalid option, an if statement detects it and the continue statement restarts the loop. When the user selects option 4, the break statement terminates the loop and ends the program.
 
 
+# QUESTION 3- Functions & Recursions
+
+Advantages of Recursion:
+
+1. Recursion simplifies problems that have a repeatitive or nested structure, e.g, factorials.
+2. In recursion, the codes are usually shorter and easy to read.
+3. Each recursive call handles a smaller piece of the given problem.
+
+Limitations of Recursion:
+
+1. Recursive calls use stack memory which can cause a stack overflow when too many calls are made.
+2. Sometimes, recursion can be slower than iterative due to function call overhead.
+3. Debugging recursion can be trickier for beginners.
+
+# QUESTION 5- Integration
+
+Control flow determines how a system react to different conditions and events, ensuring the program executes the operation in correct order while the Function breaks the program into reusable blocks of code so it could be easy to manage, maintain and debug. On the otherhand, the Embedded system uses sensors, controllers and actuators to interact with the physical world, as it collects data to which the controller procceses, and the actuator performs actions based on the logic defined by control flow and actions.
+
+For example,in a temperature-controlled fan system, the sensor reads the temperature, a function calculates if the fan should turn on, and control flow decides the function of the actuator.
