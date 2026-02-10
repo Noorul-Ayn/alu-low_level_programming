@@ -55,6 +55,38 @@ Limitations of Recursion:
 2. Sometimes, recursion can be slower than iterative due to function call overhead.
 3. Debugging recursion can be trickier for beginners.
 
+# QUESTION 4- Embedded Systems
+
+Block Circuit Diagram;
+
++-------------------+      +-------------------+      +-------------------+
+|   TMP36 Sensor    | ---> |   Arduino Uno     | ---> |       LED         |
+|   (Temperature)   |      |   (Controller)    |      |   (Actuator)      |
++-------------------+      +-------------------+      +-------------------+
+
+Sensor → Controller → Actuator
+
+Pseudocope;
+
+START
+Initialize sensor and LED pin
+Start serial communication
+
+LOOP:
+    Read temperature sensor value
+    Convert to Celsius
+    IF temperature > 30°C
+        Turn LED ON
+    ELSE
+        Turn LED OFF
+    Wait 500 ms
+END LOOP
+
+
+Short explaination:
+
+This system uses a TMP36 temperature sensor to measure ambient temperature. The Arduino reads the analog voltage from the sensor and converts it into degrees Celsius. If the temperature exceeds 30°C, the Arduino activates an LED as a warning indicator. Otherwise, the LED remains off. The system demonstrates the data flow from sensor to controller to actuator.
+
 # QUESTION 5- Integration
 
 Control flow determines how a system react to different conditions and events, ensuring the program executes the operation in correct order while the Function breaks the program into reusable blocks of code so it could be easy to manage, maintain and debug. On the otherhand, the Embedded system uses sensors, controllers and actuators to interact with the physical world, as it collects data to which the controller procceses, and the actuator performs actions based on the logic defined by control flow and actions.
